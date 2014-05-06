@@ -3,9 +3,9 @@
 
 (include-lib "deps/reveal-js/include/macros.lfe")
 
-(defun build-slide-deck (arg-data)
+(defun build-slide-deck (_)
   (deck
-    (euc-2014-slides:introduction arg-data)
-    (euc-2014-slides:chapter-1 arg-data)
-    (euc-2014-slides:chapter-2 arg-data)
-    (euc-2014-slides:chapter-3 arg-data)))
+    (euc-2014-intro:build)
+    (euc-2014-ch1:build)
+    (euc-2014-ch2:build)
+    (euc-2014-ch3:build)))

@@ -1,16 +1,9 @@
-(defmodule euc-2014-slides
+(defmodule euc-2014-ch1
   (export all))
 
 (include-lib "deps/reveal-js/include/macros.lfe")
 
-(defun introduction (arg-data)
-  (cover
-    (h1 '"LFE-Reveal-JS")
-    (h3 (list '"HTML Presentation Made" (em '" Ludicrously ") '"Robust"))
-    (p (small '"(and absurdly hip)"))
-    (p '"The Exemplar Presentation Framework")))
-
-(defun chapter-1 (arg-data)
+(defun build ()
   (chapter
     (slide
       (h1 '"LFE")
@@ -54,32 +47,3 @@
     (slide
       (p (list '"We're not going to let" (em '" anyone ")
          '"DDOS your deck on the big day.")))))
-
-(defun chapter-2 (arg-data)
-  (chapter
-    (slide
-      (h1 '"Powered By")
-      (h3 '"Erlang")
-      (img '(src "/images/Erlang_logo.png")))
-    (slide
-      (h1 '"Powered By")
-      (h3 '"YAWS")
-      (img '(src "/images/yaws_logo.png")))
-    (slide
-      (h1 '"Powered By")
-      (h3 '"Lisp Flavored Erlang")
-      (img '(src "/images/LispFlavoredErlang-small-square.png")))
-    (slide
-      (h1 '"Powered By")
-      (h3 '"Exemplar")
-      (img '(src "/images/juggernaut-tiny.png"))
-      (p '(class "fragment") (small '"Don't you know who I am?")))
-    (slide
-      (h1 '"Powered By")
-      (h3 '"Reveal.js"))))
-
-(defun chapter-3 (arg-data)
-  (chapter
-    (h1 '"lfe-reveal-js")
-    (h3 '"Check it out.")
-    (p '"https://github.com/lfe/lfe-reveal-js")))
