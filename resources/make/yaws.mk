@@ -1,5 +1,3 @@
-include common.mk
-
 ETC_DIR = ./etc
 YAWS_DIR = $(DEPS)/yaws
 YAWS = $(YAWS_DIR)/bin/yaws
