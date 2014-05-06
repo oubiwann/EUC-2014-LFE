@@ -9,3 +9,19 @@
     (euc-2014-ch1:build)
     (euc-2014-ch2:build)
     (euc-2014-ch3:build)))
+
+(defun build-index (deck-func arg-data)
+  (list
+    (!doctype 'html)
+    (html '(lang "en")
+      (list
+        (build-head arg-data)
+        (body
+          (list
+            (funcall deck-func arg-data)
+            (reveal-js-content:build-javascript arg-data)))))))
+
+(defun build-head (arg-data)
+  (list
+    (reveal-js-content:build-head arg-data)
+    ()))

@@ -1,11 +1,21 @@
 (defmodule euc-2014-intro
   (export all))
 
-(include-lib "deps/reveal-js/include/macros.lfe")
+(include-lib "include/macros.lfe")
 
 (defun build ()
-  (cover
-    (h1 '"LFE-Reveal-JS")
-    (h3 (list '"HTML Presentation Made" (em '" Ludicrously ") '"Robust"))
-    (p (small '"(and absurdly hip)"))
-    (p '"The Exemplar Presentation Framework")))
+  (list
+    (cover
+      (h1 "The State of LFE")
+      (h2 "Erlang User Conference")
+      (h3 "Stockholm 2014")
+      (div "Duncan McGreggor"))
+    (chapter
+      (slide
+        (h1 "Overview"))
+      (slide
+        (h1 "test")
+        (p "with some content"))
+      (slide
+        (h1 "here's a slide")
+        (p "some content")))))
