@@ -22,27 +22,6 @@ directory of this project when you run ``make deps``:
 * `lfeunit`_ (needed only to run the unit tests)
 
 
-Installation
-============
-
-Just add it to your ``rebar.config`` deps:
-
-.. code:: erlang
-
-    {deps, [
-        ...
-        {euc-2014, ".*", {git, "git@github.com:oubiwann/euc-2014.git", "master"}}
-      ]}.
-
-
-And then do the usual:
-
-.. code:: bash
-
-    $ rebar get-deps
-    $ rebar compile
-
-
 Usage
 =====
 
@@ -51,7 +30,7 @@ Usage
     $ make compile
     $ make dev
 
-Then go to `localhost:5099`_ in your browser.
+Then go to `localhost:5099`_ in your browser to view the presentation.
 
 
 .. Links
