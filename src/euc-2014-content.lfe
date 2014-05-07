@@ -24,4 +24,8 @@
 (defun build-head (arg-data)
   (list
     (reveal-js-content:build-head arg-data)
-    ()))
+    (link '(rel "stylesheet"
+            href "css/theme/simple.css"
+            d "theme"))
+    (link '(rel "stylesheet"
+            href "css/styles.css"))))
