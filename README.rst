@@ -13,7 +13,7 @@ Dependencies
 ------------
 
 This project assumes that you have `lfetool`_ and `rebar`_ installed
-somwhere in your ``$PATH``.
+somewhere in your ``$PATH``.
 
 
 Overview
@@ -22,12 +22,43 @@ Overview
 Topics to Cover
 ---------------
 
-* TBD
+* Intro to LFE
+* Summarizing Points from last presentation
+* Latest changes in LFE
+* Planned Features
+* Projects and Libraries
+  * Highlight: lfetool
+  * Newest additions to the community
+* Elixir Interop
+* jlfe: LFE + Erjang
+* LFE + JInterface
+* Upcoming projects
+* Summary & Conclusion
 
 Chapter Breakdown
 -----------------
 
-* TBD
+* Intro to LFE
+  * Origins
+  * Previous presentations
+  * Code samples
+
+* Why Lisp?
+  * Quick history of Lisp
+  * The best of Lisp + the best of Erlang
+  * The community benefits from a richer diversity
+
+* Latest changes in LFE
+  *
+  *
+
+* Features: Coming Soon
+* Projects: Coming Soon
+
+* Playing Well with Others
+  * Elixir
+  * jlfe
+  * JInterface and Clojure
 
 
 Usage
