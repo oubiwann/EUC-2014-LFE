@@ -5,11 +5,12 @@
 
 (defun build ()
   (list
-    (cover
+    (title-page
       (h1 "The State of LFE")
       (h2 "Erlang User Conference")
       (h3 "Stockholm 2014")
-      (div "Duncan McGreggor"))
+      (div "Duncan McGreggor")
+      (notes ""))
     (chapter
       (slide
         (h1 "Overview"))
