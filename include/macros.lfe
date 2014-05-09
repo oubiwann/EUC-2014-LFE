@@ -1,6 +1,6 @@
 (include-lib "deps/reveal-js/include/macros.lfe")
 
-(defmacro cover body
+(defmacro title-page body
   "This is a convenience macro for the front cover of a deck."
   `(section '(data-background "images/stockholm-data4-4-regular-cropped.jpg")
             (list ,@body)))
