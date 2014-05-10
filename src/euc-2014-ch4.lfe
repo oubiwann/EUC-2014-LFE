@@ -1,4 +1,4 @@
-(defmodule euc-2014-ch3
+(defmodule euc-2014-ch4
   (export all))
 
 (include-lib "include/macros.lfe")
@@ -6,9 +6,9 @@
 (defun build ()
   (chapter
     (slide
-      (h1 "New Developments")
+      (h1 "Special Projects")
       (h3 "")
-      (img '(src "/images/Erlang_logo.png")))
+      (p ""))
     (slide
       (h1 ""))
     ))

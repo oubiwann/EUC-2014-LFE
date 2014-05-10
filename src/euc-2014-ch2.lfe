@@ -6,23 +6,14 @@
 (defun build ()
   (chapter
     (slide
-      (h1 "Powered By")
-      (h3 "Erlang")
-      (img '(src "/images/Erlang_logo.png")))
+      (h1 "Introduction")
+      (h2 "Why Lisp?")
+      (img '(src "/images/lisp.png")))
     (slide
-      (h1 "Powered By")
-      (h3 "YAWS")
-      (img '(src "/images/yaws_logo.png")))
-    (slide
-      (h1 "Powered By")
-      (h3 "Lisp Flavored Erlang")
+      (h2 "Lisp Flavored Erlang")
       (img '(src "/images/LispFlavoredErlang-small-square.png")))
     (slide
-      (h1 "Powered By")
-      (h3 "Exemplar")
-      (img '(src "/images/juggernaut-tiny.png"))
-      (p-frag (small "Don't you know who I am?")))
+      (h1 ""))
     (slide
-      (h1 "Powered By")
-      (h3 "Reveal.js"))))
-
+      (h1 ""))
+    ))
