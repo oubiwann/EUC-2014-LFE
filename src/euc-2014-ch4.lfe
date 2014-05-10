@@ -6,9 +6,10 @@
 (defun build ()
   (chapter
     (slide
-      (h1 "Special Projects")
-      (h3 "")
-      (p ""))
+      (h1 "Special Projects"))
+    (overview-slide
+      (h2 "Special Projects: Overview")
+      (h2 ""))
     (slide
       (h1 ""))
     ))

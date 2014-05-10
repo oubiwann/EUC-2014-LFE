@@ -6,9 +6,11 @@
 (defun build ()
   (chapter
     (slide
-      (h1 "New Developments")
-      (h3 "")
-      (img '(src "/images/Erlang_logo.png")))
+      (h1 "New Developments"))
+    (overview-slide
+      (h2 "New Developments: Overview")
+      (h2 ""))
     (slide
-      (h1 ""))
+      (h1 "")
+      (img '(src "/images/Erlang_logo.png")))
     ))
