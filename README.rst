@@ -35,21 +35,62 @@ Topics to Cover
 * Upcoming projects
 * Summary & Conclusion
 
+      ; (slide
+      ;   (h1 "Overview")
+      ;   (ul
+      ;     (list
+      ;       (li "Introduction")
+      ;       (ul-frag
+      ;           (li "Why Lisp?")
+      ;           (li "LFE Usage: A Recap")))))
+      ; (slide
+      ;   (h1 "Overview")
+      ;   (ul
+      ;     (list
+      ;       (li "New Developments")
+      ;       (ul-frag
+      ;           (li "Recents Lands in LFE")
+      ;           (li "Features Under Development")
+      ;           (li "Roadmap")))))
+      ; (slide
+      ;   (h1 "Overview")
+      ;   (ul
+      ;     (list
+      ;       (li-frag "Special Projects")
+      ;       (ul-frag
+      ;           (li "Newest Community Projects")
+      ;           (li "lfetool - Jump Starting Projects")))))
+      ; (slide
+      ;   (h1 "Overview")
+      ;   (ul
+      ;     (list
+      ;       (li-frag "Language Interop")
+      ;       (ul-frag
+      ;           (li "The Erlang No-Brainer")
+      ;           (li "Working with Elixir")
+      ;           (li "jlfe amd Java")
+      ;           (li "Clojure with JInterface")))))
+
 Chapter Breakdown
 -----------------
 
-* Intro to LFE
-  * Origins
-  * Previous presentations
-  * Code samples
+* Title Page
 
 * Why Lisp?
   * Quick history of Lisp
   * The best of Lisp + the best of Erlang
   * The community benefits from a richer diversity
 
+* LFE Intro/Recap
+  * Origins
+  * Previous presentations
+  * Code samples
+
 * Latest changes in LFE
   *
+  *
+
+* Roadmap
   *
 
 * Features: Coming Soon
@@ -60,6 +101,16 @@ Chapter Breakdown
   * jlfe
   * JInterface and Clojure
 
+
+"Un grand pouvoir implique une grande responsabilité"
+- François-Marie Arouet (Voltaire)
+
+
+In our industry with live with a terrible legacy: electronic computing
+has its origins in ...
+
+This is a time of new beignnings. Let us remember to benefit others
+with this power, and resist the siren's call of power-abuse.
 
 Usage
 =====
