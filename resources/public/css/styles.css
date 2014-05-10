@@ -2,3 +2,16 @@ section.present {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 30px;
 }
+
+section.present.inverted {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    color: white;
+}
+
+section.present.inverted h1,
+section.present.inverted h2,
+section.present.inverted h3,
+section.present.inverted h4 {
+    color: white;
+}

@@ -14,3 +14,10 @@
   "This is a convenience macro for creating a new slide."
     `(section '(data-background "images/stockholm-data4-4-regular-cropped.jpg")
             (list ,@body)))
+
+(defmacro overview-slide body
+  "This is a convenience macro for creating a new slide."
+    `(section
+       '(data-background "images/stockholm-data4-4-regular-cropped-inverted.jpg"
+         class "inverted")
+            (list ,@body)))
