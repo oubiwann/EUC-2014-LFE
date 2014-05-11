@@ -39,23 +39,6 @@ Topics to Cover
       ;   (h1 "Overview")
       ;   (ul
       ;     (list
-      ;       (li "Introduction")
-      ;       (ul-frag
-      ;           (li "Why Lisp?")
-      ;           (li "LFE Usage: A Recap")))))
-      ; (slide
-      ;   (h1 "Overview")
-      ;   (ul
-      ;     (list
-      ;       (li "New Developments")
-      ;       (ul-frag
-      ;           (li "Recents Lands in LFE")
-      ;           (li "Features Under Development")
-      ;           (li "Roadmap")))))
-      ; (slide
-      ;   (h1 "Overview")
-      ;   (ul
-      ;     (list
       ;       (li-frag "Special Projects")
       ;       (ul-frag
       ;           (li "Newest Community Projects")
@@ -74,32 +57,86 @@ Topics to Cover
 Chapter Breakdown
 -----------------
 
-* Title Page
+Title Page
 
-* Why Lisp?
-  * Quick history of Lisp
-  * The best of Lisp + the best of Erlang
-  * The community benefits from a richer diversity
+Why Lisp?
 
-* LFE Intro/Recap
-  * Origins
-  * Previous presentations
-  * Code samples
+* Quick history of Lisp
+* The best of Lisp + the best of Erlang
+* The community benefits from a richer diversity
 
-* Latest changes in LFE
-  *
-  *
+LFE Intro/Recap
 
-* Roadmap
-  *
+* Origins
+* Previous presentations
+* Code samples
 
-* Features: Coming Soon
-* Projects: Coming Soon
+Released Features
 
-* Playing Well with Others
-  * Elixir
-  * jlfe
-  * JInterface and Clojure
+* Maps in LFE.
+* A new (run ...) REPL command run running LFE shell commands.
+* Now possible to define functions and macros in the REPL.
+* Strings no longer need to be quoted.
+* LFE now has Common Lisp macros (prog1 ...) and (prog2 ...).
+* (mod:func ...) syntax now supported.
+* New (fields-name) macro for easier usage of Mnesia from LFE.
+* Common Lisp-style multiline comments now supported: #| ... |#.
+* Improved handling of .hrl files.
+
+New Example Code
+
+* Added ring benchmark.
+* Added Joe Armstrong's favorite program.
+* Added another message-passing example.
+* Added async HTTP example.
+* Added guessing game example.
+
+New Documentation
+
+* New features updated in the text docs.
+* The Erlang "Programming Rules and Conventions" was ported to LFE.
+* The Common Lisp Style Guide was ported to LFE.
+* Work on new Java Interop Section is under way.
+* New mneisa tutorial on lfe.github.io.
+* Quick Start Guide was rewritten.
+* New "Counter Application" tutorial on lfe.github.io.
+* New "Setting up a Development Environment" section was added to the User
+  Guide.
+* A port of Land of Lisp to LFE is under way.
+
+Current Work
+
+* First candidate module for LFE stdlib has an open pull request.
+* Several tasks to improve the use of Erjang and Java from LFE.
+
+
+Roadmap
+
+* Spec and type support, pending José Valim's work on AST support in .beam
+  files.
+* Submitting more candidates for inclusion in LFE stdlib.
+* Preparing for an LFE 1.0 release!
+* Creating an LFE Cookbook.
+* Completing the Java Interop documentation.
+* Finished the LFE User Guide.
+
+Community Projects
+
+* Monads for LFE (calrissian)
+* Reveal.js for LFE and YAWS (lfe-reveal-js)
+* lfetool
+* HTML as S-expressions in LFE (exemplar)
+* LFE and Elli
+* LFE and YAWS
+* Test fixture support landed in lfeunit
+
+
+
+Playing Well with Others
+
+* Elixir
+* jlfe
+* JInterface and Clojure
 
 
 "Un grand pouvoir implique une grande responsabilité"
@@ -111,6 +148,8 @@ has its origins in ...
 
 This is a time of new beignnings. Let us remember to benefit others
 with this power, and resist the siren's call of power-abuse.
+
+This is not from Spiderman, nor even his Uncle Ben. It's not from FDR.
 
 Usage
 =====
