@@ -10,7 +10,22 @@
       (h3 "Projects")
       (ul
         (list
-          (li "")
+          (li (a '(href "https://github.com/correl/calrissian")
+                        "Monads for LFE"))
+          (li (a '(href "https://github.com/lfe/lfe-reveal-js")
+                        "Building presentations with LFE, YAWS, and Reveal.js"))
+          (li (a '(href "https://github.com/lfe/lfetool")
+                        "lfetool"))
+          (li (a '(href "https://github.com/lfe/exemplar")
+                        "HTML as S-expressions"))
+          (li (a '(href "https://github.com/lfe/lfe-elli-example")
+                        "LFE with the elli Web Framework"))
+          (li (a '(href "")
+                        ""))
+          (li (a '(href "")
+                        ""))
+          (li (a '(href "")
+                        ""))
           )))
 
     (slide
