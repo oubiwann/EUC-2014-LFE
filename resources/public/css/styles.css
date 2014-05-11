@@ -1,17 +1,52 @@
+section {
+  left: -80px;
+}
+
 section.present {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+
 }
 
 section.present.inverted {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 30px;
-    color: white;
+  background-color: rgba(64, 64, 64, 0.95);
+  border-radius: 30px;
+  color: white;
 }
 
 section.present.inverted h1,
 section.present.inverted h2,
 section.present.inverted h3,
 section.present.inverted h4 {
-    color: white;
+  color: white;
+}
+
+.reveal section img {
+  border: none;
+  box-shadow: none;
+}
+
+.reveal .slides>section,
+.reveal .slides>section>section {
+  padding: 40px;
+}
+
+.reveal.center,
+.reveal.center .slides,
+.reveal.center .slides section {
+  min-height: 0 !important;
+}
+
+.reveal pre {
+  font-size: 0.7em;
+  padding: 0;
+}
+
+.reveal pre code {
+  max-height: none;
+  padding: 0;
+}
+
+li {
+  line-height: 1.75em !important;
 }
