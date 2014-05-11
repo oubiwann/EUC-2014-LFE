@@ -7,17 +7,6 @@
   (chapter
     (slide
       (h1 "Language Interop"))
-    (overview-slide
-      (h2 "Language Interop: Overview")
-      (h2 ""))
-    (slide
-      (h1 ""))
-    ))
-
-(defun build ()
-  (chapter
-    (slide
-      (h1 "Language Interop"))
     (language-interop-preview)
     (language-interop)
     ))
