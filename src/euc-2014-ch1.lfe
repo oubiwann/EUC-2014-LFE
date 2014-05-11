@@ -7,13 +7,13 @@
   (chapter
     (overview-slide
       (h1 "Overview")
-      (ul
-        (list
-          (li "Introduction")
-          (li "New Developments")
-          (li "Special Projects")
-          (li "Language Interop")
-          (li "Wrap-up")))
+      (quick-ul
+        "Introduction"
+        "New Developments"
+        "A Tour of LFE"
+        "Special Projects"
+        "Language Interop"
+        "Wrap-up")
       (notes "Here's what we're going to cover in this presentation. "
              (br)(br)
              "As usual, I have been unable to resist cramming as much "

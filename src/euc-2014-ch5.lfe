@@ -6,26 +6,27 @@
 (defun build ()
   (chapter
     (slide
-      (h1 "Language Interop"))
-    (language-interop-preview)
-    (language-interop)
+      (h1 "Special Projects"))
+    (special-projects-preview)
+    (special-projects)
     ))
 
-(defun language-interop-preview ()
+(defun special-projects-preview ()
   (overview-slide
-    (h2 "Language Interop: Preview")
+    (h2 "Special Projects: Preview")
     (ul
       (list
-        (li "LFE & Erlang")
-        (li "LFE & Elixir")
-        (li "LFE & Java/Erjang")
-        (li "LFE & Clojure")))
+        (li "Calrissian")
+        (li "LFE + Elli Web Framework")
+        (li "LFE + YAWS")
+        (li "lfetool")
+        (li "jlfe")))
     (notes "")))
 
-(defun language-interop ()
+(defun special-projects ()
   (list
     (slide
-      (h2 "LFE & Erlang")
+      (h2 "Calrissian")
       (ul
         (list
           (li "XXX")
@@ -36,7 +37,7 @@
           (li "XXX")))
       (notes ""))
     (slide
-      (h2 "LFE & Elixir")
+      (h2 "LFE + Elli Web Framework")
       (ul
         (list
           (li "XXX")
@@ -47,7 +48,7 @@
           (li "XXX")))
       (notes ""))
     (slide
-      (h2 "LFE & Java/Erjang")
+      (h2 "LFE + YAWS")
       (ul
         (list
           (li "XXX")
@@ -58,7 +59,18 @@
           (li "XXX")))
       (notes ""))
     (slide
-      (h2 "LFE & Clojure")
+      (h2 "lfetool")
+      (ul
+        (list
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")))
+      (notes ""))
+    (slide
+      (h2 "jlfe")
       (ul
         (list
           (li "XXX")

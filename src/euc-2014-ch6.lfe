@@ -6,12 +6,66 @@
 (defun build ()
   (chapter
     (slide
-      (h1 "Wrap Up")
-      (h3 "")
-      (p ""))
-    (slide
-      (h1 "Wrap Up")
-      (h3 "")
-      (p ""))
+      (h1 "Language Interop"))
+    (language-interop-preview)
+    (language-interop)
     ))
 
+(defun language-interop-preview ()
+  (overview-slide
+    (h2 "Language Interop: Preview")
+    (ul
+      (list
+        (li "LFE & Erlang")
+        (li "LFE & Elixir")
+        (li "LFE & Java/Erjang")
+        (li "LFE & Clojure")))
+    (notes "")))
+
+(defun language-interop ()
+  (list
+    (slide
+      (h2 "LFE & Erlang")
+      (ul
+        (list
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")))
+      (notes ""))
+    (slide
+      (h2 "LFE & Elixir")
+      (ul
+        (list
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")))
+      (notes ""))
+    (slide
+      (h2 "LFE & Java/Erjang")
+      (ul
+        (list
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")))
+      (notes ""))
+    (slide
+      (h2 "LFE & Clojure")
+      (ul
+        (list
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")
+          (li "XXX")))
+      (notes ""))
+    ))

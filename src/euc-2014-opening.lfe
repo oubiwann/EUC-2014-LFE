@@ -1,4 +1,4 @@
-(defmodule euc-2014-cover
+(defmodule euc-2014-opening
   (export all))
 
 (include-lib "include/macros.lfe")
