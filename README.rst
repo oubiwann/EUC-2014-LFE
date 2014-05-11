@@ -98,13 +98,15 @@ LFE Roadmap
 * Submitting more candidates for inclusion in LFE stdlib.
 * Improvements to LFE internals.
 * Reader macros.
+* APIs for data type functions.
 * Preparing for an LFE 1.0 release!
 
 LFE Docs Roadmap
 
+* Creating an "LFE Idioms Guide for Erlangers".
 * Creating an LFE Cookbook.
 * Completing the Java Interop documentation.
-* Finished the LFE User Guide.
+* Finish the LFE User Guide.
 
 Community Projects
 
@@ -116,8 +118,6 @@ Community Projects
 * LFE and YAWS
 * Test fixture support landed in lfeunit
 * LFE on Erjang (more later)
-
-
 
 Playing Well with Others
 
