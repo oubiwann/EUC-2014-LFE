@@ -107,5 +107,6 @@
         "HTML as S-expressions in LFE (exemplar)"
         "lfetool (more later)"
         "LFE on Erjang (more later)")
-      (notes ""))
-    ))
+      (notes "As noted, some of these we will be taking a look at later in "
+             "the presentation. First, let's do a quick refresher on LFE "
+             "itself."))))
