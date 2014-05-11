@@ -115,7 +115,7 @@
           (ul
             (list
               (li-frag "Diversity brings new ways of thinking and new "
-                       "discoveriues.")
+                       "discoveries.")
               (li-frag "Increased options for the Erlang VM bring more "
                        "programmers to the community.")
               (li-frag "These both help ensure the wider success of the "
