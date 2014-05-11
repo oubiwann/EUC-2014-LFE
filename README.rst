@@ -119,6 +119,27 @@ Community Projects
 * Test fixture support landed in lfeunit
 * LFE on Erjang (more later)
 
+Lando Quotes
+
+Welcome,
+I'm the Administrator of this facility.
+
+Yeah, I'm responsible.
+The price you pay for being successful.
+
+Sorry,
+Am I interrupting anything?
+
+Our operation is small enough
+not to be noticed.
+
+I've just made a deal
+That will keep the Epire out of here forever.
+
+I had no choice.
+I'm sorry.
+
+
 Playing Well with Others
 
 * Elixir
