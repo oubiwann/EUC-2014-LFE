@@ -6,21 +6,23 @@
 (defun build ()
   (chapter
     (slide
-      (h1 "Contact")
-      (h3 "LFE")
-      (ul
-        (list
-          (li "")
-          )))
+      (h2 "Contact")
+      (h3 "LFE Info")
+      (br)
+      (p "@ErlangLisp on Twitter")
+      (p "#erlang-lisp on Freenode IRC")
+      (p "lisp-flavoured-erlang@googlegroups.com")
+      (p "http://lfe.github.io/"))
+
     (slide
-      (h1 "Contact")
-      (h3 "Duncan")
-      (ul
-        (list
-          (li "")
-          )))
+      (h2 "Contact")
+      (h3 "My Info")
+      (br)
+      (p "@oubiwann on Twitter, Github, Freenode, etc")
+      (p "oubiwann@cogitat.io")
+      (p "http://cogitat.io/"))
     ; (slide
-    ;   (h1 "Contact")
+    ;   (h2 "Contact")
     ;   (h3 "AdRoll")
     ;   (ul
     ;     (list
