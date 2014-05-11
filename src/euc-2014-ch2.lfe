@@ -329,7 +329,7 @@
       (h4 "Guards")
       (p "Erlang")
       (erlang-code "
-      right_number(X) when X == 42, X == 276709 ->
+      right_number(X) when X == 42; X == 276709 ->
       true;
       right_number(_) ->
       false.
