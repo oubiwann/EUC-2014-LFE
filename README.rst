@@ -35,24 +35,6 @@ Topics to Cover
 * Upcoming projects
 * Summary & Conclusion
 
-      ; (slide
-      ;   (h1 "Overview")
-      ;   (ul
-      ;     (list
-      ;       (li-frag "Special Projects")
-      ;       (ul-frag
-      ;           (li "Newest Community Projects")
-      ;           (li "lfetool - Jump Starting Projects")))))
-      ; (slide
-      ;   (h1 "Overview")
-      ;   (ul
-      ;     (list
-      ;       (li-frag "Language Interop")
-      ;       (ul-frag
-      ;           (li "The Erlang No-Brainer")
-      ;           (li "Working with Elixir")
-      ;           (li "jlfe amd Java")
-      ;           (li "Clojure with JInterface")))))
 
 Chapter Breakdown
 -----------------
@@ -80,7 +62,7 @@ Released Features
 * LFE now has Common Lisp macros (prog1 ...) and (prog2 ...).
 * (mod:func ...) syntax now supported.
 * New (fields-name) macro for easier usage of Mnesia from LFE.
-* Common Lisp-style multiline comments now supported: #| ... |#.
+* #| ... |# Common Lisp-style multiline comments now supported.
 * Improved handling of .hrl files.
 
 New Example Code
@@ -109,13 +91,17 @@ Current Work
 * First candidate module for LFE stdlib has an open pull request.
 * Several tasks to improve the use of Erjang and Java from LFE.
 
-
-Roadmap
+LFE Roadmap
 
 * Spec and type support, pending José Valim's work on AST support in .beam
   files.
 * Submitting more candidates for inclusion in LFE stdlib.
+* Improvements to LFE internals.
+* Reader macros.
 * Preparing for an LFE 1.0 release!
+
+LFE Docs Roadmap
+
 * Creating an LFE Cookbook.
 * Completing the Java Interop documentation.
 * Finished the LFE User Guide.
@@ -124,11 +110,12 @@ Community Projects
 
 * Monads for LFE (calrissian)
 * Reveal.js for LFE and YAWS (lfe-reveal-js)
-* lfetool
+* lfetool (more later)
 * HTML as S-expressions in LFE (exemplar)
 * LFE and Elli
 * LFE and YAWS
 * Test fixture support landed in lfeunit
+* LFE on Erjang (more later)
 
 
 
@@ -138,6 +125,7 @@ Playing Well with Others
 * jlfe
 * JInterface and Clojure
 
+Wrap UP
 
 "Un grand pouvoir implique une grande responsabilité"
 - François-Marie Arouet (Voltaire)
@@ -150,6 +138,7 @@ This is a time of new beignnings. Let us remember to benefit others
 with this power, and resist the siren's call of power-abuse.
 
 This is not from Spiderman, nor even his Uncle Ben. It's not from FDR.
+
 
 Usage
 =====
