@@ -370,5 +370,7 @@
       (notes ""))
     (slide
       (img '(src "images/Gandalf-and-Bilbo-large-LFE.jpg"))
-      (notes ""))
-    ))
+      (notes "At the risk of leaving dear Mr. Baggins with questions "
+             "unanswered, and whith our whirl-wind tour of LFE behind us, "
+             "we can now take a highlight some of the interesting work "
+             "going on in the LFE community right now."))))
