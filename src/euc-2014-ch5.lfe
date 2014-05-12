@@ -175,7 +175,7 @@
       2
       > (jlfe-types:value-of bool)
       true
-        ")
+      ")
       (notes ""))
     (slide
       (h2 "jlfe")

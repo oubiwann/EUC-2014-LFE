@@ -28,6 +28,7 @@ $(EXPM): $(BIN_DIR)
 
 get-deps:
 	@echo "Getting dependencies ..."
+	@-rm deps/reveal-js/deps/deps
 	@which rebar.cmd >/dev/null 2>&1 && rebar.cmd get-deps || rebar get-deps
 	@PATH=$(SCRIPT_PATH) lfetool update deps
 	@[ ! -f deps/reveal-js/deps ] && ln -s `pwd`/deps deps/reveal-js/deps
