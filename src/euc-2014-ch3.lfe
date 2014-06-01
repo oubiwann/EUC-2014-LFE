@@ -1,3 +1,12 @@
+;;;; Chapter content includes:
+;;;;  * Newly released features
+;;;;  * New example code
+;;;;  * New docs (landed and in-progress)
+;;;;  * New sites
+;;;;  * Current work in LFE
+;;;;  * LFE roadmap
+;;;;  * Community projects
+;;;;
 (defmodule euc-2014-ch3
   (export all))
 
@@ -70,11 +79,18 @@
         "Java Interop Section of the User Guide."
         "An LFE port of \"Land of Lisp\" is under way.")
       (notes ""))
+      (h2 "New Sites")
+      (quick-ul
+        "LFE has a new main site/landing page: http://lfe.io"
+        "The old language site has been converted to a docs-only site and lives at a new subdomain: http://docs.lfe.io"
+        "There is a new updates-oriented micro-blogging site for LFE: http://docs.lfe.io")
+      (notes ""))
     (slide
       (h2 "Current Work")
       (quick-ul
         "First candidate module for LFE stdlib has an open pull request."
-        "Several tasks to improve the use of Erjang and Java from LFE.")
+        "Several tasks to improve the use of Erjang and Java from LFE."
+        "Improved scripting options for LFE (for those wanting to use LFE as a systems-programming language, i.e., eat Go-lang's lunch")
       (notes ""))
     (slide
       (h2 "LFE Roadmap")
