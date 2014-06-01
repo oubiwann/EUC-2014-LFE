@@ -1,3 +1,6 @@
+;;;; Chapter content includes:
+;;;;  * Contact
+;;;;
 (defmodule euc-2014-ch8
   (export all))
 

@@ -1,3 +1,6 @@
+;;;; Chapter content includes:
+;;;;  * Overview
+;;;;
 (defmodule euc-2014-ch1
   (export all))
 

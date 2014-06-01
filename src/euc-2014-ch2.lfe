@@ -1,3 +1,7 @@
+;;;; Chapter content includes:
+;;;;  * Why Lisp?
+;;;;  * Why in Erlang?
+;;;;
 (defmodule euc-2014-ch2
   (export all))
 

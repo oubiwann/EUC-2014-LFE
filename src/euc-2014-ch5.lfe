@@ -1,3 +1,6 @@
+;;;; Chapter content includes:
+;;;;  * Overview of LFE-based community projects
+;;;;
 (defmodule euc-2014-ch5
   (export all))
 

@@ -1,3 +1,9 @@
+;;;; Chapter content includes:
+;;;;  * Interop with Erlang
+;;;;  * Interop with Elixir
+;;;;  * Interop with JVM via Erjang
+;;;;  * Interop with JVM via JInterface
+;;;;
 (defmodule euc-2014-ch6
   (export all))
 

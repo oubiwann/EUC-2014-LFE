@@ -1,3 +1,6 @@
+;;;; Chapter content includes:
+;;;;  * Wrap-up
+;;;;
 (defmodule euc-2014-ch7
   (export all))
 
