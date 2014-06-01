@@ -42,7 +42,8 @@
       (img '(src "images/LispFlavoredErlang-small-square.png")))
     (slide
       (h3 "Beginnings")
-      (p-frag "Erlang was born on Robert Virding's Dell XPS in 2008.")
+      (p-frag "LFE was born on Robert Virding's Dell XPS in 2007.")
+      (p-frag "Initially released in March of 2008.")
       (p-frag "As an old-skool Lisper, he thought it would be fun doing a "
               "Lisp on the Erlang VM.")
       (p-frag "The intent was to modify the Lisp to suit the Erlang VM."))
@@ -153,18 +154,18 @@
       (h3 "Data Types")
       (h4 "Maps")
       (lisp-code "
-      > (set data (map 'ship \"Heart of Gold\"
-                       'hitchhiker \"Arthur Dent\"))
-      #M(hitchhiker \"Arthur Dent\"
-         ship \"Heart of Gold\")
-      > (set data (set-map data 'captain \"Zaphod\"))
-      #M(captain \"Zaphod\"
-         hitchhiker \"Arthur Dent\"
-         ship \"Heart of Gold\")
-      > (set data (update-map data 'hitchhiker \"Ford Prefect\"))
-      #M(captain \"Zaphod\"
-         hitchhiker \"Ford Prefect\"
-         ship \"Heart of Gold\")
+    > (set data (map 'ship \"Heart of Gold\"
+                     'hitchhiker \"Arthur Dent\"))
+    #M(hitchhiker \"Arthur Dent\"
+       ship \"Heart of Gold\")
+    > (set data (set-map data 'captain \"Zaphod\"))
+    #M(captain \"Zaphod\"
+       hitchhiker \"Arthur Dent\"
+       ship \"Heart of Gold\")
+    > (set data (update-map data 'hitchhiker \"Ford Prefect\"))
+    #M(captain \"Zaphod\"
+       hitchhiker \"Ford Prefect\"
+       ship \"Heart of Gold\")
       "))
     (slide
       (h3 "Data Types")
@@ -270,20 +271,20 @@
       (h4 "Matching Records in Function Heads")
       (p "Erlang")
       (erlang-code "
-      handle_info(ping, #state {remote_pid = undefined} = State) ->
-          gen_server:cast(self(), ping),
-          {noreply, State};
-      handle_info(ping, State) ->
-          {noreply, State};
+  handle_info(ping, #state {remote_pid = undefined} = S) ->
+      gen_server:cast(self(), ping),
+      {noreply, S};
+  handle_info(ping, S) ->
+      {noreply, S};
       ")
       (p "LFE")
       (lisp-code "
-      (defun handle_info
-        (('ping (= (match-state remote-pid 'undefined) state))
-          (gen_server:cast (self) 'ping)
-          `#(noreply ,state))
-        (('ping state)
-         `#(noreply ,state)))
+  (defun handle_info
+    (('ping (= (match-state remote-pid 'undefined) state))
+      (gen_server:cast (self) 'ping)
+      `#(noreply ,state))
+    (('ping state)
+     `#(noreply ,state)))
       ")
       (notes ""))
     (slide
@@ -340,7 +341,7 @@
           (lambda (x)
             (apply f
               (list arg x))))
-      curry
+      partial
       > (set applied (partial #'+/2 10))
       #Fun&lt;lfe_eval.14.16114431&gt;
       > (funcall applied 10)

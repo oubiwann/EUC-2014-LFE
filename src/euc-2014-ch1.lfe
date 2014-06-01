@@ -19,6 +19,8 @@
         "Wrap-up")
       (notes "Here's what we're going to cover in this presentation. "
              (br)(br)
+             "[read sections]"
+             (br)(br)
              "As usual, I have been unable to resist cramming as much "
              "as possible into a discussion on LFE. We can blame this on "
              "my child-like enthusiasm and then do the best we can with "

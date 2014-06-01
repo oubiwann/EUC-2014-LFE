@@ -1,8 +1,8 @@
 ;;;; Chapter content includes:
 ;;;;  * Newly released features
 ;;;;  * New example code
-;;;;  * New docs (landed and in-progress)
 ;;;;  * New sites
+;;;;  * New docs (landed and in-progress)
 ;;;;  * Current work in LFE
 ;;;;  * LFE roadmap
 ;;;;  * Community projects
@@ -64,26 +64,27 @@
         "Guessing game example :-)")
       (notes ""))
     (slide
+      (h2 "New Sites")
+      (quick-ul
+        "LFE has a new main site/landing page: http://lfe.io"
+        "The old language site has been converted to a docs-only site and lives at a new subdomain: http://docs.lfe.io"
+        "There is a new updates-oriented micro-blogging site for LFE: http://blog.lfe.io")
+      (notes ""))
+    (slide
       (h2 "New Documentation")
       (quick-ul
         "The Erlang \"Programming Rules and Conventions\" was ported to LFE."
         "The Common Lisp Style Guide was ported to LFE."
-        "Quick Start Guide was rewritten."
-        "New \"Counter Application\" tutorial on lfe.github.io."
+        "The Quick Start Guide was rewritten."
+        "New \"Counter Application\" tutorial on docs.lfe.io."
         "\"Setting up a Development Environment\" section was added to the User Guide.")
       (notes ""))
     (slide
       (h2 "New Documentation In-Progress")
       (quick-ul
-        "Mneisa tutorial on lfe.github.io."
+        "Mneisa tutorial on docs.lfe.io."
         "Java Interop Section of the User Guide."
         "An LFE port of \"Land of Lisp\" is under way.")
-      (notes ""))
-      (h2 "New Sites")
-      (quick-ul
-        "LFE has a new main site/landing page: http://lfe.io"
-        "The old language site has been converted to a docs-only site and lives at a new subdomain: http://docs.lfe.io"
-        "There is a new updates-oriented micro-blogging site for LFE: http://docs.lfe.io")
       (notes ""))
     (slide
       (h2 "Current Work")

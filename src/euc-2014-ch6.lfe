@@ -51,7 +51,18 @@
         "This one's a no-brainer."
         "Included for completeness :-)"
         "Define modules & functions."
-        (list "Make calls: " (inline-code "(lists:map ...)")))
+        "Make calls to Erlang functions from LFE functions.")
+      (notes ""))
+    (slide
+      (h2 "LFE & Erlang")
+      (p "Classic LFE call syntax:")
+      (lisp-code "
+        (: lists map ... )
+        ")
+      (p "New call syntax:")
+      (lisp-code "
+        (lists:map ... )
+        ")
       (notes ""))))
 
 (defun elixir-interop ()
@@ -61,18 +72,23 @@
     (slide
       (h2 "LFE & Elixir")
       (img '(src "images/elixir-logo.png"))
+      (br)
+      (quick-ul-frag
+        "Almost as easy as using Erlang from LFE."
+        "Add Elixir to the rebar deps of your LFE project.")
       (notes ""))
     (slide
       (h2 "LFE & Elixir")
-      (quick-ul-frag
-        "Almost as easy as using Erlang from LFE."
-        "Add Elixir to the rebar deps of your LFE project."
-        (inline-code "make get-deps && make compile")
-        "Start LFE:"
-        (list (inline-code "lfetool repl lfe \\ ") (br)
-              (inline-code "-pa ./deps/elixir/lib/elixir/ebin/"))
-        "This will dump you into the LFE REPL with access to the Elixir .beam files.")
-      (notes "You may need to include more Elixir ebin dirs, depending upon "
+      (p "Build it and start LFE:")
+      (shell-code "
+        $ make get-deps && make compile
+        $ lfetool repl lfe \\
+            -pa ./deps/elixir/lib/elixir/ebin/
+        ")
+      (notes "This will dump you into the LFE REPL with access to the "
+             "Elixir .beam files."
+             (br)(br)
+             "You may need to include more Elixir ebin dirs, depending upon "
              "your needs."))
     (slide
       (h2 "LFE & Elixir")
@@ -148,18 +164,18 @@
       (h3 "Comparison: Static Field Variable Access")
       (p "LFE/Erjang")
       (lisp-code "
-      > (java:get_static 'java.lang.Math 'PI)
-      3.141592653589793
-      > (java:get_static 'java.math.BigDecimal 'ROUND_CEILING)
-      2
+    > (java:get_static 'java.lang.Math 'PI)
+    3.141592653589793
+    > (java:get_static 'java.math.BigDecimal 'ROUND_CEILING)
+    2
       ")
       (p "jlfe")
       (lisp-code "
-      > (.Math:PI)
-      3.141592653589793
-      >
-      > (.java.math.BigDecimal:ROUND_CEILING)
-      2
+    > (.Math:PI)
+    3.141592653589793
+    >
+    > (.java.math.BigDecimal:ROUND_CEILING)
+    2
       ")
       (notes ""))
     (slide
@@ -167,21 +183,21 @@
       (h3 "Comparison: Constructors")
       (p "LFE/Erjang")
       (lisp-code "
-      > (set st (call 'java.lang.String 'new))
-      ()
-      > (set hm (call 'java.util.HashMap 'new))
-      ()
-      > (set se (java.util.AbstractMap$SimpleEntry 'new \"a\" \"b\"))
-      #B()
+  > (set st (call 'java.lang.String 'new))
+  ()
+  > (set hm (call 'java.util.HashMap 'new))
+  ()
+  > (set se (java.util.AbstractMap$SimpleEntry 'new \"a\" \"b\"))
+  #B()
       ")
       (p "jlfe")
       (lisp-code "
-      > (set st (.String))
-      ()
-      > (set hm (.java.util.HashMap))
-      ()
-      > (set se (.java.util.AbstractMap$SimpleEntry \"a\" \"b\"))
-      #B()
+  > (set st (.String))
+  ()
+  > (set hm (.java.util.HashMap))
+  ()
+  > (set se (.java.util.AbstractMap$SimpleEntry \"a\" \"b\"))
+  #B()
       ")
       (notes ""))
     (slide
@@ -241,47 +257,44 @@
     (slide
       (h2 "LFE & Clojure")
       (quick-ul
-        "Well, Erlang, actually."
-        "Create 2 nodes: an Erlang one, and a Clojure one."
+        "Create 2 nodes: an LFE one, and a Clojure one."
+        (list "LFE/OTP starts up Clojure " (inline-code "java") " process")
         "Uses JInterface in Clojure to handle Erlang data."
-        "Written by Maxim Molchanov.")
-      (notes "Unfortunately, I didn't have time to port the Erlang-Clojure "
-             "app to LFE-Clojure. I leave this as either an exercise for the "
-             "reader, or for my future self." (br)(br)
-             ""))
+        "Ported from Written by Maxim Molchanov.")
+      (notes ""))
     (slide
       (h2 "Erlang & Clojure")
       (h3 "Preparations")
       (shell-code "
-      $ git clone \\
-          https://github.com/oubiwann/erlang-clojure-node.git
+      $ git clone https://github.com/lfe/lfecljapp.git
       $ make compile
-      $ make shell
+      $ make repl
       ")
-      (notes "At this point, you'll be dumped into the Erlang shell."))
+      (notes "At this point, you'll be dumped into the LFE REPL."))
     (slide
       (h2 "Erlang & Clojure")
       (h3 "Starting")
-      (erlang-code "
-      (erl_node@cahwsx01)1> application:load(clojurenode).
-      ok
-      (erl_node@cahwsx01)2> application:start(clojurenode).
-      ...
-      INFO: starting clojure app with cmd \"java -Dnode ...\"
-      ...
-      ok
-      ...
-      INFO: connection to java node established, pid <6983.1.0>
+      (lisp-code "
+  (lfenode@cahwsx01)> (lfeclj-app:start)
+  ok
+  (lfenode@cahwsx01)> lfecljapp.lfe:187:<0.44.0>:...
+  INFO: Starting clojure app with cmd \"java -Dnode=... \"
+  (lfenode@cahwsx01)> lfecljapp.lfe:118:<0.42.0>:...
+  INFO: Connection to java node established, pid: <6709.1.0>
       ")
       (notes "Run the usual commands."))
     (slide
       (h2 "Erlang & Clojure")
       (h3 "Trying It Out")
-      (erlang-code "
-      (erl_node@cahwsx01)3> erlang:send(
-          {clj_mbox, clj_node@cahwsx01}, {ping, self()}).
-      {ping,<0.57.0>})
-      (erl_node@cahwsx01)4> flush().
+      (p "Send a message:")
+      (lisp-code "
+  (lfenode@cahwsx01)> (lfecljapp:ping \"clj-node@cahwsx01\"
+                                      \"clj-mbox\")
+  #(ping <0.32.0>)
+      ")
+      (p "Check for a response:")
+      (lisp-code "
+      (lfenode@cahwsx01)> (c:flush)
       Shell got {pong,<6709.1.0>}
       ok
       ")
@@ -291,17 +304,16 @@
       (h2 "LFE & Clojure")
       (h3 "What's Happening")
       (quick-ul-frag
-        "We've got an Erlang/OTP app,"
+        "We've got an LFE/OTP app,"
         "That's calling out to the shell to start up a Clojure/JInterface app."
-        "Messages are sent by the Erlang node to the Clojure node,"
+        "Messages are sent by the LFE node to the Clojure node,"
         "And then processed by Clojure code,"
-        "Finally sending a response back to the Erlang node.")
+        "Finally sending a response back to the LFE node (in this case, the REPL).")
       (notes "We've barely scratched the surface, "))
     (slide
       (h2 "LFE & Clojure")
       (h3 "Future Work")
       (quick-ul
-        "Rewrite the Erlang as LFE!"
         "Run number-crunching apps as Erlang nodes."
         "Do machine learning!"
         "Try it with Erjang and jlfe instead of Clojure ...")

@@ -10,4 +10,18 @@
       (h2 "A Lisp Flavoured Smörgåsbord")
       (h3 "Erlang User Conference, Stockholm 2014")
       (div "Duncan McGreggor")
-      (notes ""))))
+      (notes "The LFE talk at EUC this year was initially going to be a "
+             "re-run of the LFE talk given at Erlang Factory San Francisco, "
+             "with some additions demonstrating production deployments of "
+             "LFE. "
+             (br)(br)
+             "However, one of the really great things that happened at Erlang "
+             "Factory San Francisco was a fireside chat with Robert about the "
+             "next things we'd like to work on in LFE, including the requests "
+             "we'd received from the user community."
+             (br)(br)
+             "Following that conference, we made soooo much progress on LFE "
+             "features and related projects, that plans had to change around "
+             "this presentation: we needed to share the latest developments "
+             "in what appears to be an LFE renaissance. "
+             ))))
