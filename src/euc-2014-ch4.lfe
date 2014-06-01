@@ -261,6 +261,27 @@
       (notes ""))
     (slide
       (h3 "Erlang Idioms in LFE")
+      (h4 "Matching Records in Function Heads")
+      (p "Erlang")
+      (erlang-code "
+      handle_info(ping, #state {remote_pid = undefined} = State) ->
+          gen_server:cast(self(), ping),
+          {noreply, State};
+      handle_info(ping, State) ->
+          {noreply, State};
+      ")
+      (p "LFE")
+      (lisp-code "
+      (defun handle_info
+        (('ping (= (match-state remote-pid 'undefined) state))
+          (gen_server:cast (self) 'ping)
+          `#(noreply ,state))
+        (('ping state)
+         `#(noreply ,state)))
+      ")
+      (notes ""))
+    (slide
+      (h3 "Erlang Idioms in LFE")
       (h4 "Receiving Messages")
       (p "Erlang")
       (erlang-code "
