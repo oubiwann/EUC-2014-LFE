@@ -1,3 +1,9 @@
+;;;; Chapter content includes:
+;;;;  * Quick intro to LFE
+;;;;  * Data Types
+;;;;  * Erlang idioms in LFE
+;;;;  * Sample code
+;;;;
 (defmodule euc-2014-ch4
   (export all))
 
@@ -392,6 +398,6 @@
     (slide
       (img '(src "images/Gandalf-and-Bilbo-large-LFE.jpg"))
       (notes "At the risk of leaving dear Mr. Baggins with questions "
-             "unanswered, and whith our whirl-wind tour of LFE behind us, "
-             "we can now take a highlight some of the interesting work "
-             "going on in the LFE community right now."))))
+             "unanswered, and with our whirl-wind tour of LFE behind us, "
+             "we can now highlight some of the interesting work "
+             "currently going on in the LFE community."))))
