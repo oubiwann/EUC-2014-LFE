@@ -66,9 +66,11 @@
     (slide
       (h2 "New Sites")
       (quick-ul
-        "LFE has a new main site/landing page: http://lfe.io"
-        "The old language site has been converted to a docs-only site and lives at a new subdomain: http://docs.lfe.io"
-        "There is a new updates-oriented micro-blogging site for LFE: http://blog.lfe.io")
+        "LFE has a new main site+landing page: http://lfe.io"
+        (list "The old language site has been converted to a docs-only site "
+              "and lives at a new subdomain: http://docs.lfe.io")
+        (list "There is a new updates-oriented micro-blogging site for LFE: "
+              "http://blog.lfe.io"))
       (notes ""))
     (slide
       (h2 "New Documentation")
@@ -77,21 +79,24 @@
         "The Common Lisp Style Guide was ported to LFE."
         "The Quick Start Guide was rewritten."
         "New \"Counter Application\" tutorial on docs.lfe.io."
-        "\"Setting up a Development Environment\" section was added to the User Guide.")
+        (list "\"Setting up a Development Environment\" section was added to "
+              "the User Guide."))
       (notes ""))
     (slide
       (h2 "New Documentation In-Progress")
       (quick-ul
+        "An LFE port of \"Land of Lisp\" is under way."
         "Mneisa tutorial on docs.lfe.io."
-        "Java Interop Section of the User Guide."
-        "An LFE port of \"Land of Lisp\" is under way.")
+        "Java Interop Section of the User Guide.")
       (notes ""))
     (slide
       (h2 "Current Work")
       (quick-ul
+        (list "Improved scripting options for LFE (for those wanting to use "
+              "LFE as a systems-programming language, i.e., eat Go-lang's "
+              "lunch).")
         "First candidate module for LFE stdlib has an open pull request."
-        "Several tasks to improve the use of Erjang and Java from LFE."
-        "Improved scripting options for LFE (for those wanting to use LFE as a systems-programming language, i.e., eat Go-lang's lunch")
+        "Several tasks to improve the use of Erjang and Java from LFE.")
       (notes ""))
     (slide
       (h2 "LFE Roadmap")

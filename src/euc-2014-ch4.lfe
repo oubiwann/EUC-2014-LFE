@@ -48,6 +48,16 @@
               "Lisp on the Erlang VM.")
       (p-frag "The intent was to modify the Lisp to suit the Erlang VM."))
     (slide
+      (h3 "Motivation")
+      (quick-ul-frag
+        "Was curious see how a Lisp would run on and integrate with Erlang."
+        (list "Wanted to explore generating Core Erlang, plugging it into the "
+        "backend of the Erlang compiler.")
+        "Likes implementing languages."
+        (list "Thought it would be a fun problem to solve, as a solution "
+              "would be comprised of many different parts and the"
+              "problem space was quite open-ended.")))
+    (slide
       (h3 "LFE Basics")
       (p "LFE is built on Core Erlang and supports the usual good stuff:")
       (ul

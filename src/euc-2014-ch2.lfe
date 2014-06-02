@@ -113,7 +113,8 @@
     (slide
       (h2 "Why in Erlang?")
       (p (em "Couldn't you just have left Erlang well enough alone?"))
-      (p-frag "Yes. But Lisp is such a " (em "simple ") " syntax; it was bound "
+      (p-frag "Yes.")
+      (p-frag "But Lisp is such a " (em "simple ") " syntax; it was bound "
               "to happen, sooner or later. In fact ...")
       (p-frag "From 2007 to 2008, three major languages/VMs got a Lisp:")
       (quick-ul-frag
@@ -128,7 +129,9 @@
           (p "But there are subtler and more important considerations:")
           (quick-ul-frag
             "Diversity brings new ways of thinking and new discoveries."
-            "Increased options for the Erlang VM bring more programmers to the community."
+            (list "Increased options for the Erlang VM bring more programmers "
+                  "to the community. (Witness Elixir, LFE, Joxa, Erlog, luerl, "
+                  "Concurrent Schemer.)")
             "Both of these ensure the wider success of the Erlang VM."
             "More people benefit from the excellence that is Erlang.")))
       (notes ""))))
