@@ -48,14 +48,6 @@
                   "The JInterface Package")
         (a '(href "https://github.com/oubiwann/erlang-clojure-node")
                   "erlang-clojure-node, originally by Maxim Molchanov")
-        (a '(href "")
-                  "")
-        (a '(href "")
-                  "")
-        (a '(href "")
-                  "")
-        (a '(href "")
-                  "")
           ))
     (slide
       (h1 "References")
@@ -69,10 +61,6 @@
                   "xkcd 224")
         (a '(href "http://joearms.github.io/2013/11/21/My-favorite-erlang-program.html")
                   "Joe Armstrong's favourite program")
-        (a '(href "")
-                  "")
-        (a '(href "")
-                  "")
           ))
 
     (slide
@@ -80,8 +68,11 @@
       (h3 "Quotes")
       (quick-ul
         (a '(href "https://twitter.com/josh_wills/status/422136541851312128/")
-                  "Say Monad One More Time (Josh Wills")
-        (a '(href "")
-                  "")
+                  "Say Monad One More Time (Josh Wills)")
+        (a '(href "http://www.presidency.ucsb.edu/ws/?pid=16602")
+                  "...great power involves great responsibility.")
+        (a '(href "http://www.asser.nl/upload/documents/20131105T103110-cleer_13-5_web.pdf")
+                  "Le plus digne du pouvoir est celui qui en connaît la responsabilité.")
           ))
     ))
+

@@ -13,9 +13,9 @@
     (euc-2014-ch5:build)       ; Special Projects
     (euc-2014-ch6:build)       ; Language Interop
     (euc-2014-ch7:build)       ; Wrap-up
+    (euc-2014-closing:build)   ; Thanks!
     (euc-2014-ch8:build)       ; Contact
     (euc-2014-ch9:build)       ; References
-    (euc-2014-closing:build)   ; Thanks!
     ))
 
 (defun build-index (deck-func arg-data)

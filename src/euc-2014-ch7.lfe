@@ -35,7 +35,7 @@
       (quick-ul-frag
         "We have access to all the other works in the BEAM community."
         "We can easily (mostly) translate decades of Lisp code to LFE."
-        (list "We have multilpe ways of working with the endless options "
+        (list "We have multiple ways of working with the endless options "
               "provided by the JVM world.")
         "All of this from the best Actor model language on the market :-)")
       (notes ""))
@@ -44,11 +44,10 @@
       (h3 "The power is mind-blowing."))
     (slide
       (h2 "Wrap Up")
-      (img '(src "images/Voltaire_by_Jean-Antoine_Houdon_(1778)-small.jpg"
+      (img '(src "images/FDR_in_1933-small.jpeg"
              style "float: right;"))
-      (blockquote (list "Un grand pouvoir implique une grande "
-                        "responsabilité" (br)
-                        (em "- François-Marie Arouet (Voltaire)")))
+      (blockquote (list "...Great power involves great responsibility." (br)
+                        (em "- Franklin D. Roosevelt")))
 
       (div '(style "text-align: left;")
         (list
@@ -56,34 +55,60 @@
                     (br) "war:"))
       (p-frag "ENIAC was built with the purpose of calculating artillery trajectories.")
       (p-frag "After von Neumann's involvement, it was used on the Manhattan Project.")))
-      (notes ""))
+      (notes "Franklin D. Roosevelt's undelivered Address Prepared for "
+             "Jefferson Day April 13, 1945"))
+
     (slide
       (h2 "Wrap Up")
-      (img '(src "images/Voltaire_by_Jean-Antoine_Houdon_(1778)-small.jpg"
+      (img '(src "images/spiderman-quote.jpg"
              style "float: right;"))
-      (blockquote (list "Un grand pouvoir implique une grande "
-                        "responsabilité" (br)
-                        (em "- François-Marie Arouet (Voltaire)")))
+      (blockquote (list "... With great power there must also come -- great responsibility!" (br)
+                        (em "- Amazing Fantasy #15")))
 
       (div '(style "text-align: left;")
         (list
       (p-frag "In contrast, Lisp was created to explore intelligence.")
-      (p-frag "Erlang was created in a playful manner to explore reliable systems.")
+      (p-frag "Erlang was created in a playful manner to explore reliable systems (train sets!).")
       (p-frag "LFE was created in this same playful spirit upheld at Ericsson's CSL.")))
-      (notes ""))
+      (notes "This quote appeared in the 1962 issue of Amazing Fantasy #15, Spider Man."
+             (br) (br)
+             "Apparently the phrase was used earlier in the super-hero genre with a "
+             "lecture of Pa Kent to young Clark, in the 1948 Superman serial."))
+
     (slide
       (h2 "Wrap Up")
       (img '(src "images/Voltaire_by_Jean-Antoine_Houdon_(1778)-small.jpg"
              style "float: right;"))
-      (blockquote (list "Un grand pouvoir implique une grande "
-                        "responsabilité" (br)
-                        (em "- François-Marie Arouet (Voltaire)")))
+      (blockquote (list "Un grand pouvoir implique une grande responsabilité"
+                        (br)
+                        (em "- François-Marie Arouet (Voltaire)?")))
 
       (div '(style "text-align: left;")
         (list
       (p-frag "As socially responsible hackers, we need to remember the power of our tools.")
       (p-frag "It's easy to forget in the excitement of the moment.")
       (p-frag "Or in the frustrated boredom of a job.")))
-      (notes ""))
-    ))
+      (notes "I could find no evidence of this. I searched Volume 48 where this "
+             "quote is supposed to come from, and found no trace of it. "
+             "Others have commented to this same issue, when attempting to "
+             "confirm this attribution."))
+    (slide
+      (h2 "Wrap Up")
+      (img '(src "images/Sosthene_Ier_de_La_Rochefoucauld_(1785-1864)-small.jpg"
+             style "float: right;"))
+      (blockquote (list "Le plus digne du pouvoir est celui qui en connaît la responsabilité."
+                        (br)
+                        (em "- Louis François Sosthène de La Rochefoucauld-Doudeauville")))
 
+      (div '(style "text-align: left;")
+        (list
+      (p-frag "We've got OTP " (em "and") " Lisp macros ...")
+      (p-frag "Screw surveillance and digital bombs.")
+      (p-frag "Let's make mind-blowing software that helps people.")))
+      (notes "The CENTRE FOR THE LAW OF EU EXTERNAL RELATIONS published a "
+             "paper that referenced the quote as Voltaire's but also said "
+             "they were unable to verify. They did present another potential "
+             "source, though: Livre des pensées, Paris, 1835, p. 121."
+             (br) (br)
+             "Most worthy of power is one that knows the responsibility."))
+    ))
