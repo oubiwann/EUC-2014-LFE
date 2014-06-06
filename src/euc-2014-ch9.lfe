@@ -73,6 +73,9 @@
                   "...great power involves great responsibility.")
         (a '(href "http://www.asser.nl/upload/documents/20131105T103110-cleer_13-5_web.pdf")
                   "Le plus digne du pouvoir est celui qui en connaît la responsabilité.")
+        (a '(href "http://archive.org/stream/uvresdevoltaire27migegoog#page/n5/mode/2up")
+                  "Couldn't find quote in volume 48 of Œuvres de Voltaire.")
+
           ))
     ))
 
