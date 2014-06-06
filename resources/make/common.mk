@@ -9,6 +9,8 @@ OUT_DIR = ./ebin
 TEST_DIR = ./test
 TEST_OUT_DIR = ./.eunit
 SCRIPT_PATH=.:./bin:"$(PATH)":/usr/local/bin
+ERL_LIBS=$(shell lfetool info erllibs)
+STATIC_FILE = resources/public/deck.html
 
 $(BIN_DIR):
 	mkdir -p $(BIN_DIR)
@@ -60,6 +62,13 @@ shell-no-deps: compile-no-deps
 	@which clear >/dev/null 2>&1 && clear || printf "\033c"
 	@echo "Starting shell ..."
 	@PATH=$(SCRIPT_PATH) lfetool repl
+
+static:
+	@echo "Generating static content ..."
+	@ERL_LIBS=$(ERL_LIBS) PATH=$(SCRIPT_PATH) erl \
+	-eval "io:format(\"~s~n\", ['euc-2014-content':'build-index'([])])." \
+	-noshell -s erlang halt > $(STATIC_FILE)
+	@echo "Saved to $(STATIC_FILE)"
 
 clean: clean-ebin clean-eunit
 	@which rebar.cmd >/dev/null 2>&1 && rebar.cmd clean || rebar clean
