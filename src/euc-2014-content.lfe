@@ -29,6 +29,9 @@
             (funcall deck-func arg-data)
             (reveal-js-content:build-javascript arg-data)))))))
 
+(defun build-index (arg-data)
+  (build-index #'build-slide-deck/1 arg-data))
+
 (defun build-head (arg-data)
   (list
     (reveal-js-content:build-head arg-data)
