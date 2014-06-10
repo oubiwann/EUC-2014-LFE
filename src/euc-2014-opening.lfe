@@ -10,7 +10,11 @@
       (h2 "A Lisp Flavoured Smörgåsbord")
       (h3 "Erlang User Conference, Stockholm 2014")
       (div "Duncan McGreggor")
-      (notes "This LFE talk was originally going to be a "
+      (notes "Hej! My name is Duncan McGreggor. By day, I'm an engineering "
+             "manager at AdRoll and by night I'm an LFE hacker and community "
+             "contributor."
+             (br)(br)
+             "This LFE talk was originally going to be a "
              "re-run of the LFE talk given at Erlang Factory San Francisco, "
              "with some additions demonstrating production deployments of "
              "LFE. "

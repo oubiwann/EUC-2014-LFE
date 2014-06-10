@@ -90,7 +90,10 @@
       (p (list "Most importantly, however, it's because the universe is "
                "cons's all the way down:"))
       (img '(src "images/lisp-xkcd.jpg"))
-      (notes "Randall Munroe (the author of xkcd) has had some very nice "
+      (notes "The " (em "real") " reason you'd want to chose a Lisp, though, "
+             "is that it's the language of the Universe ;-)"
+             (br)(br)
+             "Randall Munroe (the author of xkcd) has had some very nice "
              "things to say about Lisp. In fact, the new LFE front page "
              "quotes xkcd's Lisp Star Wars spoof."))))
 
@@ -101,11 +104,12 @@
       (p-frag "The obvious answer: ")
       (p-frag (em (list "One now has easy access to the same "
                     (strong "idioms ") "that have made Lisp so "
-                    (strong "powerful ") "for so long.")))
+                    (strong "powerful ") "for so long,")))
+      (p-frag (em "without having to give up OTP."))
       ; (notes "It's what you get when you mix the Banarama of languages "
       ;        "with a language that is its own AST."))
       (notes "\"Okay\", you may say, "
-             "\"you've talked me into playing with Lisp. But in "
+             "\"you've talked me into playing with Lisp. But a Lisp in "
             (em "Erlang") "?\" "))
     (slide
       (h2 "Why in Erlang?")
