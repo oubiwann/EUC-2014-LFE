@@ -30,9 +30,7 @@
           (li "Erlang Idioms in LFE")
           (li "Sample Code")))
     (notes "In this fist section of the talk I'm going to cover some "
-           "basics -- a refresher to those familiar with Lisps, or "
-           "a gentle crash-course for those who have not encountered Lisp "
-           "previously.")))
+           "basics -- a gentle crash-course.")))
 
 (defun intro ()
   (list
@@ -44,9 +42,8 @@
       (h3 "Beginnings")
       (p-frag "LFE was born on Robert Virding's Dell XPS in 2007.")
       (p-frag "Initially released in March of 2008.")
-      (p-frag "As an old-skool Lisper, he thought it would be fun doing a "
-              "Lisp on the Erlang VM.")
-      (p-frag "The intent was to modify the Lisp to suit the Erlang VM."))
+      (p-frag "The intent was to modify the Lisp to suit the Erlang VM.")
+      (notes "LFE's origins are humble. But in the best sense of the word :-)"))
     (slide
       (h3 "Motivation")
       (quick-ul-frag
@@ -56,7 +53,10 @@
         "Likes implementing languages."
         (list "Thought it would be a fun problem to solve, as a solution "
               "would be comprised of many different parts and the"
-              "problem space was quite open-ended.")))
+              "problem space was quite open-ended."))
+      (notes "You may wonder what caused Robert to do such a thing."
+             "This same question occurred to me ... so I asked him. "
+             "Here's what he shared: "))
     (slide
       (h3 "LFE Basics")
       (p "LFE is built on Core Erlang and supports the usual good stuff:")
@@ -72,7 +72,8 @@
 (defun data-types ()
   (list
     (overview-slide
-      (h2 "Data Types"))
+      (h2 "Data Types")
+      (notes "You've now got the backstory. Let's see what it looks like."))
     (slide
       (h3 "Data Types")
       (h4 "Numbers")
@@ -89,7 +90,9 @@
       5
       > (rem 11 2)
       1
-      "))
+      ")
+      (notes "Here are some basic operations on numbers. Note the way in "
+             "which different bases are specified."))
     (slide
       (h3 "Data Types")
       (h4 "Atoms and Strings")
@@ -102,7 +105,8 @@
       \"Don't Panic.\"
       > (list 68 111 110 39 116 32 80 97 110 105 99 46)
       \"Don't Panic.\"
-      "))
+      ")
+      (notes "Atoms are preceeded by a single quote or are wraped in pipes."))
     (slide
       (h3 "Data Types")
       (h4 "Lists")
@@ -123,7 +127,8 @@
       (3 4 5 6)
       > (cons '(1 2 3) '(4 5 6))
       ((1 2 3) 4 5 6)
-      "))
+      ")
+      (notes "Example list usage."))
     (slide
       (h3 "Data Types")
       (h4 "Tuples")
@@ -136,7 +141,8 @@
       2
       > (element 2 data)
       \"5 to 1 against\"
-      "))
+      ")
+      (notes "Example tuple usage."))
     (slide
       (h3 "Data Types")
       (h4 "Records")
@@ -159,7 +165,8 @@
       > (person-age ford)
       244
       ")
-      (notes ""))
+      (notes "Here's how you define a record, create a record, access "
+             "some data and update it."))
     (slide
       (h3 "Data Types")
       (h4 "Maps")
@@ -176,7 +183,8 @@
     #M(captain \"Zaphod\"
        hitchhiker \"Ford Prefect\"
        ship \"Heart of Gold\")
-      "))
+      ")
+      (notes "Here is the new map syntax."))
     (slide
       (h3 "Data Types")
       (h4 "Maps")
@@ -195,12 +203,19 @@
          captain \"Captain\"
          hitchhiker \"Arthur Dent\"
          ship \"Golgafrinchan Ark Fleet Ship B\")
-      "))))
+      ")
+      (notes "Experimental Common Lisp forms for maps."))))
 
 (defun idiom-translation ()
   (list
     (overview-slide
-      (h2 "Erlang Idioms in LFE"))
+      (h2 "Erlang Idioms in LFE")
+      (notes "Comparing LFE and Erlang directly is something I've "
+             "been asked to do by new-comers to LFE. More than once "
+             "I've heard comments to the effect that this would have "
+             "made learning LFE trivial."
+             (br)(br)
+             "Here's a first taste ..."))
     (slide
       (h3 "Erlang Idioms in LFE")
       (h4 "Pattern Matching")
@@ -320,7 +335,9 @@
 (defun sample-code ()
   (list
     (overview-slide
-      (h2 "Sample Code"))
+      (h2 "Sample Code")
+      (notes "Next up, we have some samples that may give you a better "
+             "sense of what LFE can look like."))
     (slide
       (h3 "Sample Code")
       (h4 "Dot Product Function")

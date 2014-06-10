@@ -19,9 +19,19 @@
         "Wrap-up")
       (notes "Here's what we're going to cover in this presentation. "
              (br)(br)
-             "[read sections]"
+             (quick-ul
+               "A brief introduction"
+               "The latest developments in LFE-proper"
+               "A quick language tour, for those unfamiliar with LFE, or anyone who might benefit from a refresher"
+               "A highlight of some of the more recent LFE projects"
+               "I'll share with you evidence that LFE is not an island ;-)"
+               "And then we'll wrap up this session.")
              (br)(br)
-             "As usual, I have been unable to resist cramming as much "
-             "as possible into a discussion on LFE. We can blame this on "
-             "my child-like enthusiasm and then do the best we can with "
-             "the alloted time ;-)"))))
+             "This is a lot :-)"
+             (br)(br)
+             "As you can see, this isn't just a status report on the "
+             "LFE codebase. Rather, I'm sharing glimpses of the many "
+             "things happening inside an Erlang micro-community... "
+             "one that supports Erlang BEAM languages -- directly, "
+             "through its own work; and indirectly, by encouraging the "
+             "exploration of other languages and features in our ecosystem."))))

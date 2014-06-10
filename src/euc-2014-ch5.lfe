@@ -24,12 +24,15 @@
         (li "LFE + YAWS")
         (li "lfetool")
         (li "jlfe")))
-    (notes "")))
+    (notes "Here are some of the projects that I'd like to cover. "
+           "I had a few more I'd wanted to bring in (included one with "
+           "code generation), but there wasn't enough time.")))
 
 (defun special-projects ()
   (list
     (slide
-      (h2 "Monads"))
+      (h2 "Monads")
+      (notes "Oh! The magic word ..."))
     (slide
       (img '(src "images/say-monad.jpg")))
     (slide
@@ -43,7 +46,8 @@
         "Inspired by erlando project (RabbitMQ)."
         "Only supports maybe monad so far."
         "https://github.com/correl/calrissian")
-      (notes ""))
+      (notes "This is a project I had wanted to create. Then someone "
+             "beat me to it."))
     (slide
       (h2 "Calrissian")
       (lisp-code "
@@ -55,7 +59,7 @@
            (parsed <- (parse-input input))
            (store-data parsed)))
         ")
-      (notes ""))
+      (notes "Some example usage ..."))
     (slide
       (h2 "Calrissian")
       (lisp-code "
@@ -70,7 +74,7 @@
                  ((tuple 'ok parsed)
                   (store-data parsed))))))
         ")
-      (notes ""))
+      (notes "More example usage!"))
     (slide
       (h2 "LFE + Elli Web Framework")
       (quick-ul
@@ -79,7 +83,8 @@
         "Do it from LFE!"
         "https://github.com/knutin/elli"
         "https://github.com/lfe/lfe-elli-example")
-      (notes ""))
+      (notes "We've had a recent contribution to the LFE web space using the "
+             "Elli web framwork."))
     (slide
       (h2 "LFE + YAWS")
       (quick-ul
@@ -90,12 +95,12 @@
               " function in a module.")
         "Even better: use Exemplar to generate HTML S-expressions."
         "Great for REST services.")
-      (notes ""))
+      (notes "And another one for YAWS."))
     (slide
       (h2 "LFE + YAWS + Bootstrap")
       (p (list "via " (inline-code "lfetool")))
       (img '(src "images/YAWS-LFE-Bootstrap-Exemplar-screenshot.png"))
-      (notes ""))
+      (notes "Here's an lfetool boostrap skeleton project."))
     (slide
       (h2 "LFE + YAWS + Exemplar")
       (p "This is the index function for this presentation:")
@@ -112,7 +117,7 @@
                   (reveal-js-content:build-javascript
                     arg-data)))))))
         ")
-      (notes ""))
+      (notes "This is the code that's actually powering this presentation."))
     (slide
       (h2 "LFE + YAWS")
       (quick-ul
@@ -154,7 +159,8 @@
     (slide
       (h2 "jlfe")
       (img '(src "images/DukeOfferingLFE-square-tiny.png"))
-      (notes ""))
+      (notes "Lastly, a peek at jlfe. The next section will cover this in "
+             "more detail."))
     (slide
       (h2 "jlfe")
       (quick-ul

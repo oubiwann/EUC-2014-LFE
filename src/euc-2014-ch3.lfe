@@ -29,7 +29,8 @@
       "Current Work"
       "LFE Roadmap"
       "Community Projects")
-    (notes "")))
+    (notes "Next up, we're going to take a look at what's been happening with "
+           "LFE.")))
 
 (defun new-developments ()
   (list
@@ -40,7 +41,7 @@
         (list "A new " (inline-code "(run ...) ") "REPL command for "
               "running LFE shell commands.")
         "It is now possible to define functions and macros in the REPL."
-        "Strings no longer need to be quoted."
+        (list "Strings no longer need to be " (inline-code "quote") "d.")
         (list (inline-code "(mod:func ...) ") "syntax has been added."))
       (notes ""))
     (slide
@@ -62,7 +63,7 @@
         "Another message-passing example."
         "Async HTTP example."
         "Guessing game example :-)")
-      (notes ""))
+      (notes "There is a bunch of new example code included with LFE."))
     (slide
       (h2 "New Sites")
       (quick-ul
@@ -78,7 +79,7 @@
         "The Erlang \"Programming Rules and Conventions\" was ported to LFE."
         "The Common Lisp Style Guide was ported to LFE."
         "The Quick Start Guide was rewritten."
-        "New \"Counter Application\" tutorial on docs.lfe.io."
+        "A new \"Counter Application\" tutorial on docs.lfe.io."
         (list "\"Setting up a Development Environment\" section was added to "
               "the User Guide."))
       (notes ""))
@@ -101,7 +102,8 @@
     (slide
       (h2 "LFE Roadmap")
       (quick-ul
-        "Spec and type support, pending José Valim's work on AST in .beam files."
+        (list "Spec and type support, pending either the OTP team's work on "
+              ".beam files or some interesting hacks by Robert :-)")
         "Submitting more candidates for inclusion in LFE stdlib."
         "Improvements to LFE internals."
         "Reader macros."
@@ -118,7 +120,7 @@
         "Completing the Java Interop documentation."
         "Finishing the LFE User Guide."
         )
-      (notes ""))
+      (notes "Here is some of the documentation we hope to tackle soon."))
     (slide
       (h2 "Community Projects of Note")
       (quick-ul
@@ -129,6 +131,7 @@
         "HTML as S-expressions in LFE (exemplar)"
         "lfetool (more later)"
         "LFE on Erjang (more later)")
-      (notes "As noted, some of these we will be taking a look at later in "
-             "the presentation. First, let's do a quick refresher on LFE "
-             "itself."))))
+      (notes "As parenthetically noted, we will be taking a look "
+             "at some of these later in the presentation. "
+             (br) (br)
+             "Bur first! Let's do a quick refresher on LFE itself."))))

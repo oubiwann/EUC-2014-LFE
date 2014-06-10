@@ -17,7 +17,7 @@
         "A Tour of LFE"
         "Special Projects"
         "Language Interop")
-      (notes ""))
+      (notes "Here's what we've covered."))
     (slide
       (h2 "Wrap Up")
       (h3 "Highlights")
@@ -28,7 +28,7 @@
         (list "With just these two, unimagined new possibilies are at our "
               "fingertips.")
         "But it goes beyond that.")
-      (notes ""))
+      (notes "And here's why we might want to use LFE."))
     (slide
       (h2 "Wrap Up")
       (h3 "Highlights")
@@ -55,8 +55,10 @@
                     (br) "war:"))
       (p-frag "ENIAC was built with the purpose of calculating artillery trajectories.")
       (p-frag "After von Neumann's involvement, it was used on the Manhattan Project.")))
-      (notes "Franklin D. Roosevelt's undelivered Address Prepared for "
-             "Jefferson Day April 13, 1945"))
+      (notes ""
+             (br)(br)
+             "Franklin D. Roosevelt's undelivered Address Prepared for "
+             "Jefferson Day April 13, 1945."))
 
     (slide
       (h2 "Wrap Up")
@@ -67,9 +69,9 @@
 
       (div '(style "text-align: left;")
         (list
-      (p-frag "In contrast, Lisp was created to explore intelligence.")
+      (p-frag "In contrast to that heaviness, Lisp was created to explore intelligence.")
       (p-frag "Erlang was created in a playful manner to explore reliable systems (train sets!).")
-      (p-frag "LFE was created in this same playful spirit upheld at Ericsson's CSL.")))
+      (p-frag "LFE was created in the same, playful spirit upheld at Ericsson's CSL.")))
       (notes "This quote appeared in the 1962 issue of Amazing Fantasy #15, Spider Man."
              (br) (br)
              "Apparently the phrase was used earlier in the super-hero genre with a "
@@ -104,11 +106,31 @@
         (list
       (p-frag "We've got OTP " (em "and") " Lisp macros ...")
       (p-frag "Screw surveillance and digital bombs.")
-      (p-frag "Let's make mind-blowing software that helps people.")))
+      (p-frag "Let's make mind-blowing software that " (em "helps") " people.")))
       (notes "The CENTRE FOR THE LAW OF EU EXTERNAL RELATIONS published a "
              "paper that referenced the quote as Voltaire's but also said "
              "they were unable to verify. They did present another potential "
              "source, though: Livre des pensées, Paris, 1835, p. 121."
              (br) (br)
              "Most worthy of power is one that knows the responsibility."))
+
+    (slide
+      (h2 "Wrap Up")
+      (img '(src "images/Sosthene_Ier_de_La_Rochefoucauld_(1785-1864)-small.jpg"
+             style "float: left;"))
+       (p
+        (list (list
+          "\"I think we should " (strong "care") " because we write programs "
+          "for the " (strong "whole population") ", and we should have a fair representation of that "
+          "population creating [these programs]. "
+          (strong "The technology we produce shapes our world and our future ")
+          ", and we want it to be shaped in a way that "
+          "reflects the interests of all, not just an empowered few.\"")
+       (br)
+       (em "- Katie Miller, EUC 2014")))
+      (notes "Finally, in the spirit of using our powers of mind for good, "
+             "I'd like to "
+             "quote the brilliant Katie Miller from her keynote yesterday. "
+             "This view is perfectly stated and is a wonderful example of "
+             "the high standard to which we need to hold ourselves."))
     ))

@@ -39,25 +39,31 @@
       (h2 "Why Lisp?")
       (p (em "Do we really want to code in something so old?"))
       (img '(src "images/lisp-1.5-sets-example.png"))
-      (notes "This is an excerpt of code from the Lisp 1.5 manual, "
+      (notes "This code respresents one of the reasons that the mention of "
+             "Lisp may cause panic."
+             (br)(br)
+             "This is an excerpt of code from the Lisp 1.5 manual, "
              "first published in August, 1962."
              (br)(br)
-             "As you can probably discern, this is code is defining set "
+             "As you can probably discern, the code here is defining set "
              "operations for sets implemented with lists."))
     (slide
       (h2 "Why Lisp?")
+      (p (em "Do we really want to code in something so old?"))
       (p "Fortunately, we don't have to.")
       (img '(src "images/lfe-sets-example.png"))
       (notes "To put aside any fears that may have arisen when seeing "
-             "that code, I'll give a little spoiler here. This is what "
-             "that same code would look like in LFE if we didn't use "
-             "the Erlang sets module."
+             "the last slide's code, here is a preview of the typical Lisp "
+             "you will find in this presentation."
+             (br)(br)
+             "If we wanted to provide list-based set functionality in LFE, "
+             "this is what the code from the 1.5 manual would look like for us."
              (br)(br)
              "We've got cons'ing and pattern matching in the function heads, "
              "the Erlang lists module, lower-case letters, and syntax "
-             "highlighting ;-)"
+             "highlighting ;-) "
              (br)(br)
-             "This is not the Lisp of 1962."))
+             "This is not the Lisp of the 1.5 manual. It's a new world :-)"))
     (slide
       (h2 "Why Lisp?")
       (ul
@@ -71,13 +77,13 @@
                    "near syntaxlessness of the language.")
           (li-frag "Due to it's venerable age, there is an enormous "
                    "corpus of code to draw from.")))
-      (notes "Born 3 years after the death of ENIAC, Lisp has been with us from "
+      (notes "Born 3 years after the death of ENIAC [click], Lisp has been with us from "
              "the dawn of modern computing. Due to the hardships of the AI "
-             "Winter, Lisp has weathered some of the greatest social "
-             "difficulties a language can withstand. "
+             "Winter [click], Lisp has weathered some of the greatest social "
+             "difficulties a language can withstand. [click]"
              (br)(br)
              "Due to its dead-simple syntax, small number of core forms, "
-             "homoiconicity, and macro system, one can accomplish such feats "
+             "homoiconicity, and macro system [click], one can accomplish such feats "
              "as writing a compiler in the morning and a DSL in an afternoon."))
     (slide
       (h2 "Why Lisp?")
@@ -98,8 +104,9 @@
                     (strong "powerful ") "for so long.")))
       ; (notes "It's what you get when you mix the Banarama of languages "
       ;        "with a language that is its own AST."))
-      (notes "Okay, you've talked me into playing with Lisp. But in "
-            (em "Erlang") "? "))
+      (notes "\"Okay\", you may say, "
+             "\"you've talked me into playing with Lisp. But in "
+            (em "Erlang") "?\" "))
     (slide
       (h2 "Why in Erlang?")
       (p-frag "A terrifyingly powerful combination:")
@@ -132,7 +139,7 @@
             (list "Increased options for the Erlang VM bring more programmers "
                   "to the community. (Witness Elixir, LFE, Joxa, Erlog, luerl, "
                   "Concurrent Schemer.)")
-            "Both of these ensure the wider success of the Erlang VM."
+            "Living by these principles ensures the wider success of the Erlang VM."
             "More people benefit from the excellence that is Erlang.")))
       (notes ""))))
 

@@ -28,7 +28,8 @@
         (li "LFE & Elixir")
         (li "LFE & Java/Erjang")
         (li "LFE & Clojure")))
-    (notes "")))
+    (notes "The last code I'll cover involves the ways in which LFE may "
+           "be used in conjunction with other languages.")))
 
 (defun erlang-interop ()
   (list
@@ -63,12 +64,13 @@
       (lisp-code "
         (lists:map ... )
         ")
-      (notes ""))))
+      (notes "Here's everything you need to know about Erlang inter-op with LFE :-)"))))
 
 (defun elixir-interop ()
   (list
     (overview-slide
-      (h2 "LFE & Elixir"))
+      (h2 "LFE & Elixir")
+      (notes "What about the new kid in town?"))
     (slide
       (h2 "LFE & Elixir")
       (img '(src "images/elixir-logo.png"))
@@ -89,7 +91,7 @@
              "Elixir .beam files."
              (br)(br)
              "You may need to include more Elixir ebin dirs, depending upon "
-             "your needs."))
+             "what you are trying to do."))
     (slide
       (h2 "LFE & Elixir")
       (p "Sample calls:")
@@ -129,7 +131,8 @@
         "Wrapper functions for providing convenient syntax."
         (list "Boiler plate " (inline-code "java.lfe") " module creation.")
         "Utility functions for working with Java objects.")
-      (notes "We've already seen a little bit of LFE and Java with jlfe."))
+      (notes "We've already seen a little bit of LFE and Java with jlfe. "
+             "Here's a bit more!"))
     (slide
       (h2 "LFE & Java/Erjang")
       (h3 "Outstanding Issues")
@@ -158,7 +161,8 @@
       > (.Math:sin 0.5)
       0.479425538604203
       ")
-      (notes ""))
+      (notes "jlfe lets you reduce this to something much more succinct, "
+             "like what you see in Clojure."))
     (slide
       (h2 "LFE & Java/Erjang")
       (h3 "Comparison: Static Field Variable Access")
@@ -177,7 +181,7 @@
     > (.java.math.BigDecimal:ROUND_CEILING)
     2
       ")
-      (notes ""))
+      (notes "Here's how you access constants."))
     (slide
       (h2 "LFE & Java/Erjang")
       (h3 "Comparison: Constructors")
@@ -253,15 +257,19 @@
 (defun jinterface-interop ()
   (list
     (overview-slide
-      (h2 "LFE & Clojure"))
+      (h2 "LFE & Clojure")
+      (notes "That's almost Clojure. What about real Clojure?"))
     (slide
       (h2 "LFE & Clojure")
       (quick-ul
         "Create 2 nodes: an LFE one, and a Clojure one."
         (list "LFE/OTP starts up Clojure " (inline-code "java") " process")
         "Uses JInterface in Clojure to handle Erlang data."
-        "Ported from Written by Maxim Molchanov.")
-      (notes ""))
+        "Ported from Erlang and Clojre work originally by Maxim Molchanov.")
+      (notes "Sure, you can do that too :-) As long as you're willing to "
+             "play the JInterface game."
+             (br)(br)
+             "Here's what the example code in this section does:"))
     (slide
       (h2 "Erlang & Clojure")
       (h3 "Preparations")
@@ -317,5 +325,8 @@
         "Run number-crunching apps as Erlang nodes."
         "Do machine learning!"
         "Try it with Erjang and jlfe instead of Clojure ...")
-      (notes "As you might imagine, there is a world of possibility here :-)"))
+      (notes "As you might imagine, there is a world of possibility here :-)"
+             (br)(br)
+             "This brings us to the close of the code suveys and almost to "
+             "the end of the talk."))
     ))
