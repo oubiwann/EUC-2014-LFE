@@ -116,8 +116,9 @@
 
     (slide
       (h2 "Wrap Up")
-      (img '(src "images/Sosthene_Ier_de_La_Rochefoucauld_(1785-1864)-small.jpg"
+      (img '(src "images/lambda-love-small.png"
              style "float: left;"))
+       (br)
        (p
         (list (list
           "\"I think we should " (strong "care") " because we write programs "
@@ -126,8 +127,8 @@
           (strong "The technology we produce shapes our world and our future ")
           ", and we want it to be shaped in a way that "
           "reflects the interests of all, not just an empowered few.\"")
-       (br)
-       (em "- Katie Miller, EUC 2014")))
+       (br)(br)
+       (em '(style "float: right;") "- Katie Miller, EUC 2014")))
       (notes "Finally, in the spirit of using our powers of mind for good, "
              "I'd like to "
              "quote the brilliant Katie Miller from her keynote yesterday. "
